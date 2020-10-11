@@ -72,4 +72,4 @@ jobs:
           path: build/x86_64-unknown-linux-gnu/tests/scripts/thread-cert
       - name: Codecov
         run: |
-          bash <(curl -s https://codecov.io/bash) -x "llvm-cov gcov" -Z -v
+          bash ./codecov -x "llvm-cov gcov" -Z -v

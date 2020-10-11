@@ -31,6 +31,8 @@
  *   This file includes definitions for a bit-vector.
  */
 
+// LCOV_EXCL_START
+
 #ifndef BIT_VECTOR_HPP_
 #define BIT_VECTOR_HPP_
 
@@ -116,6 +118,8 @@ public:
                 ExitNow(rval = true);
             }
         }
+
+// LCOV_EXCL_STOP
 
     exit:
         return rval;
