@@ -159,7 +159,7 @@ class OtbrDocker:
             if COVERAGE or OTBR_COVERAGE:
                 self.bash('service otbr-agent stop')
 
-                codecov_cmd = 'bash /tmp/codecov.bash -Z'
+                codecov_cmd = 'bash /tmp/codecov.bash -Z -v'
                 # Upload OTBR code coverage if OTBR_COVERAGE=1, otherwise OpenThread code coverage.
                 if not OTBR_COVERAGE:
                     codecov_cmd += ' -R third_party/openthread/repo'
